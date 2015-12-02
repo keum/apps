@@ -2,7 +2,7 @@ var map, layerControl, rsidebar, lsidebar, drawControl, drawnItems = null;
 var autocompdata = [];
 
 $(document).ready(function() {
-
+L.mapbox.accessToken = 'pk.eyJ1IjoibWFwaXRwayIsImEiOiIxMk5pN0drIn0.RoUFzCiXmh0xYCwmuXYCRw';
     var map = L.map('map', {maxZoom: 22}).setView([48.03, -122.4085], 14);
 
     var featureLayer = L.mapbox.featureLayer()
